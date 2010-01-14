@@ -1,0 +1,200 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.sf.infrared</groupId>
+        <artifactId>infrared-parent</artifactId>
+        <version>2.6-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <name>infraRED Web GUI</name>
+    <groupId>net.sf.infrared</groupId>
+    <artifactId>infrared-web</artifactId>
+    <version>2.6-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.9</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>infrared-base</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>infrared-collector</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>infrared-aspects</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.6</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>1.7</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.1.4</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>geronimo-spec</groupId>
+            <artifactId>geronimo-spec-servlet</artifactId>
+            <version>2.4-rc4</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>geronimo-spec</groupId>
+            <artifactId>geronimo-spec-jsp</artifactId>
+            <version>2.0-rc4</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>jsptree</groupId>
+            <artifactId>jsptree</artifactId>
+            <version>1.0</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.9</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>1.2</version>
+
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>1.2</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>1.2</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>1.2</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-dao</artifactId>
+            <version>1.2</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>1.2</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>struts</groupId>
+            <artifactId>struts</artifactId>
+            <version>1.1</version>
+<exclusions>
+<exclusion>
+<groupId>javax.sql</groupId>
+<artifactId>jdbc-stdext</artifactId>
+</exclusion>
+</exclusions>
+        </dependency>
+        
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.0.6</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.0</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.1</version>
+
+        </dependency>
+        
+        <dependency>
+            <groupId>poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>2.5.1-final-20040804</version>
+
+        </dependency>
+
+    </dependencies>
+   
+    <!-- the version property has to be replaced -->
+    <build>
+     <finalName>infrared-web</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+ 
+   
+</project>
