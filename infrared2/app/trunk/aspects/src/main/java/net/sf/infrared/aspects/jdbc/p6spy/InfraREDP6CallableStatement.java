@@ -530,7 +530,15 @@ public class InfraREDP6CallableStatement
 		passThru.setNClob(parameterName, reader);
 	}
 
-	public void setNClob(String parameterName, Reader reader, long length)
+    public <T> T getObject(int parameterIndex, Class<T> type) throws SQLException {
+        return null;
+    }
+
+    public <T> T getObject(String parameterName, Class<T> type) throws SQLException {
+        return null;
+    }
+
+    public void setNClob(String parameterName, Reader reader, long length)
 			throws SQLException {
 		passThru.setNClob(parameterName, reader, length);
 	}

@@ -842,7 +842,15 @@ public class InfraREDP6ResultSet implements ResultSet {
 		passthru.updateNClob(columnLabel, reader);
 	}
 
-	public void updateNClob(int columnLabel, Reader reader, long length)
+    public <T> T getObject(int columnIndex, Class<T> type) throws SQLException {
+        return null;
+    }
+
+    public <T> T getObject(String columnLabel, Class<T> type) throws SQLException {
+        return null;
+    }
+
+    public void updateNClob(int columnLabel, Reader reader, long length)
 			throws SQLException {
 		passthru.updateNClob(columnLabel, reader, length);
 	}

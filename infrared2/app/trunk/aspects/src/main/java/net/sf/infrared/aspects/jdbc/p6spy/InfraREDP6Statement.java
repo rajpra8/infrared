@@ -368,7 +368,15 @@ public class InfraREDP6Statement implements Statement {
 		return passThru.isPoolable();
 	}
 
-	public void setPoolable(boolean poolable) throws SQLException {
+    public void closeOnCompletion() throws SQLException {
+
+    }
+
+    public boolean isCloseOnCompletion() throws SQLException {
+        return false;
+    }
+
+    public void setPoolable(boolean poolable) throws SQLException {
 		passThru.setPoolable(poolable);
 	}
 
