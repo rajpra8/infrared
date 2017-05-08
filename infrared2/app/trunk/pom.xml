@@ -7,6 +7,25 @@
     <version>${ver}</version>
     <packaging>pom</packaging>
 
+    <repositories>
+        <repository>
+            <id>java.net</id>
+            <url>https://maven.java.net/content/repositories/public</url>
+        </repository>
+        <repository>
+            <id>maven-central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>mulesoft.org</id>
+            <url>http://repository.mulesoft.org/releases</url>
+        </repository>
+        <repository>
+            <id>dev.anyframejava.org</id>
+            <url>http://dev.anyframejava.org/maven/repo</url>
+        </repository>
+    </repositories>
+
     <pluginRepositories>         
       <pluginRepository>             
         <id>sonatype-public</id>             
@@ -361,6 +380,7 @@
     </reporting>
 
     <properties>
+        <ver>2.6-SNAPSHOT</ver>
 		<spring-version>2.5.6</spring-version>
 		<applicationVersion>${ver}</applicationVersion>
     </properties>

@@ -5,8 +5,8 @@
 
     <parent>
         <groupId>net.sf.infrared</groupId>
-        <artifactId>infrared-parent</artifactId>
-        <version>2.6-SNAPSHOT</version>
+        <artifactId>infrared</artifactId>
+        <version>${ver}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -194,6 +194,26 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-1</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>../build.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
  
    
