@@ -133,6 +133,6 @@
 			</dependency>
     </dependencies>
     <properties>
-      <spring.version>2.5.6</spring.version>
+      <spring.version>5.2.20.RELEASE</spring.version>
     </properties>
 </project>
